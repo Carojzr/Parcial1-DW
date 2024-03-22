@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Thin.ttf') format('truetype'); /* Fuente normal */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf') format('truetype'); /* Fuente extrabold */
+    font-weight: regular;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+  }
+  
+  .header h1.title {
+    font-family: 'Poppins'; 
+    font-weight: normal; 
+    padding: 0;
+    text-align: center;
+    color: #bcbcbc;
+    font-size: 25px;
+  }
+  .header h1.sub1 {
+    font-size: 25px; 
+    color: #3f3e3e; 
+    font-family: 'Poppins'; 
+    font-weight: regular; 
+    text-align: center; 
+    margin-top: 0;
+  }
+  .header h3.sub {
+    font-size: 15px; 
+    color: #bcbcbc; 
+    font-family: 'Poppins'; 
+    font-weight: regular;
+    text-align: center; 
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Definimos tres columnas iguales */
+    grid-template-rows: repeat(4, 1fr); /* Definimos cuatro filas iguales */
+    gap: 10px; /* Espacio entre las tarjetas */
+    margin-right: 230px;
+    margin-left: 150px;
+    
+  }
+  
+  .card {
+    width: 390px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    border: 1px solid black;
+    position: relative; 
+    color: #3f3e3e; 
+    font-family: 'Poppins'; 
+}
+    
+  
+  .card-arriba {
+    grid-column: 2; 
+    grid-row: span 2; 
+    border-top: 2px solid #ea5353; 
+    
+  }
+  
+  .card-abajo {
+    grid-column: 2 ; 
+    grid-row: 3 / span 2; 
+    border-top: 2px solid #fc9b1d;
+  }
+  
+  .card-izq {
+    grid-column: 1; 
+    grid-row: 2/span 2;
+    border-top: 2px solid #62dada;
+  }
+  
+  .card-der {
+    grid-column: 3; 
+    grid-row: 2/span 2; 
+    border-top: 2px solid #4a9dfc;
+  }
+
+  .corner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: auto;
+    border-top-left-radius: 15px;
+  }
+  
+  .corner-img-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: auto;
+    border-bottom-right-radius: 15px;
+  }
